@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        font-size: larger;
+        height: 70px;
+        width: 170px;
+        background-color: black;
+        color: white;
+        top: 15px;
+        position: relative;
+        
+        
+    }
+
+    .a:hover{
+        background-color: aqua;
+       
+    }
+    #txtno{
+        position: relative;
+        width: 695px;
+        font-size: larger;
+        height: 35px;
+    }
+    body{
+        background-color: black;
+        position: relative;
+        top: 15px;
+      
+
+        /* border: 4px solid whitesmoke; */
+        width: 700px;
+        height: 55vh;
+        text-align: center;
+        position: relative;
+        left: 390px;
+        top: 115px;
+        box-shadow: 5px 5px 16px 15px whitesmoke;
+        
+    }
+
+  p,i,b{
+    color: white;
+    position: relative;
+    top: 4px;
+  }
+    
+</style>
+<body>
+
+
+   <h2> <p><i><b>Calculator</b></i></p> </h2>
+    
+    
+    <input type="text" id="txtno">
+  
+</div>
+    <button id="btnmod" class="a">%</button>
+    <button id="btnsubadd" class="a">+/-</button>
+    <button id="btnc" class="a">C</button>
+    <button id="btnce" class="a">CE</button>
+    <br>
+    <button id="btn7" class="a">7</button>
+    <button id="btn8" class="a">8</button>
+    <button id="btn9" class="a">9</button>
+    <button id="btnmul" class="a">*</button>
+    <br>
+    <button id="btn4" class="a">4</button>
+    <button id="btn5" class="a">5</button>
+    <button id="btn6" class="a">6</button>
+    <button id="btnsub" class="a">-</button>
+    <br>
+    <button id="btn1" class="a">1</button>
+    <button id="btn2" class="a">2</button>
+    <button id="btn3" class="a">3</button>
+    <button id="btnplus" class="a">+</button>
+    <br>
+    <button id="btn0" class="a">0</button>
+    <button id="btn00" class="a">00</button>
+    <button id="btndiv" class="a">/</button>
+    <button id="btnequal" class="a">=</button>
+   
+</body>
+
+<script>
+    let txtno=document.querySelector("#txtno");
+    let btn1=document.querySelector("#btn1");
+    let btn2=document.querySelector("#btn2");
+    let btn3=document.querySelector("#btn3");
+    let btn4=document.querySelector("#btn4");
+    let btn5=document.querySelector("#btn5");
+    let btn6=document.querySelector("#btn6");
+    let btn7=document.querySelector("#btn7");
+    let btn8=document.querySelector("#btn8");
+    let btn9=document.querySelector("#btn9");
+    let btn0=document.querySelector("#btn0");
+    let btn00=document.querySelector("#btn00");
+    let btnplus=document.querySelector("#btnplus");
+    let btnsub=document.querySelector("#btnsub");
+    let btnmul=document.querySelector("#btnmul");
+    let btndiv=document.querySelector("#btndiv");
+    let btnmod=document.querySelector("#btnmod");
+    let btnc=document.querySelector("#btnc");
+    let btnce=document.querySelector("#btnce");
+    let btnequal=document.querySelector("#btnequal");
+    let btnsubadd=document.querySelector("#btnsubadd")
+
+    btn1.addEventListener("click", () =>{
+        txtno.value +="1";
+    });
+    btn2.addEventListener("click", () =>{
+        txtno.value +="2";
+    });
+    btn3.addEventListener("click", () =>{
+        txtno.value +="3";
+    });
+    btn4.addEventListener("click", () =>{
+        txtno.value +="4";
+    });
+    btn5.addEventListener("click", () =>{
+        txtno.value +="5";
+    });
+    btn6.addEventListener("click", () =>{
+        txtno.value +="6";
+    });
+    btn7.addEventListener("click", () =>{
+        txtno.value +="7";
+    });
+    btn8.addEventListener("click", () =>{
+        txtno.value +="8";
+    });
+    btn9.addEventListener("click", () =>{
+        txtno.value +="9";
+    });
+    btn0.addEventListener("click", () =>{
+        txtno.value +="0";
+    });
+    btnplus.addEventListener("click", () =>{
+        txtno.value +="+";
+    });
+    btnsub.addEventListener("click", () =>{
+        txtno.value +="-";
+    });
+    btnmul.addEventListener("click", () =>{
+        txtno.value +="*";
+    });
+    btndiv.addEventListener("click", () =>{
+        txtno.value +="/";
+    });
+    btnmod.addEventListener("click", () =>{
+        txtno.value +="%";
+    });
+    btnc.addEventListener("click", () =>{
+        txtno.value =" ";
+    });
+    btnce.addEventListener("click", () =>{
+        txtno.value ="";
+    });
+    btnequal.addEventListener("click", () =>{
+        txtno.value = eval(txtno.value);
+    
+    });
+    btnsubadd.addEventListener("click", () =>{
+        txtno.value = parseInt(txtno.value)*-1;
+    });
+
+</script>
+</html>
